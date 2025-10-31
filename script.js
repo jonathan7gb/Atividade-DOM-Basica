@@ -49,5 +49,6 @@ btnAdd.addEventListener('click', () => {
     const item = document.createElement('li')
     item.textContent = input_habilidade.value
     lista_habilidades.appendChild(item)
+    input_habilidade.value = ""
 })
 
