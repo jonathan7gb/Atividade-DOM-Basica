@@ -38,3 +38,16 @@ const imagem = document.getElementById("cartao-img")
 select_box.addEventListener('change', () => {
     imagem.setAttribute('src', select_box.value)
 })
+
+// =========================================    
+
+const input_habilidade = document.getElementById("habilidade-input")
+const btnAdd = document.getElementById("btn-adicionar")
+const lista_habilidades = document.getElementById("lista-habilidades")
+
+btnAdd.addEventListener('click', () => {
+    const item = document.createElement('li')
+    item.textContent = input_habilidade.value
+    lista_habilidades.appendChild(item)
+})
+
